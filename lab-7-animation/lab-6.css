@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .water{
+    width: 100em;
+    height: 37em;
+    z-index: -1;
+    background-size: cover;
+  }
+  
+  .boat{
+  
+    position: relative;
+    animation-name: animation;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes animation {
+  
+    0%{left: 0;top: 0}
+    10%{left:10em ; top: 0;transform: rotate(5deg);}
+    20%{left:20em ;top:0 ;transform: rotate(-5deg);}
+    30%{left:30em ;top: 0;transform: rotate(5deg);}
+    40%{left:40em ;top: 0;transform: rotate(-5deg);}
+    50%{left:50em ;top: 0;transform: rotate(5deg);}
+    60%{left:60em ;top: 0;transform: rotate(-5deg);}
+    70%{left:70em ;top: 0;transform: rotate(5deg);}
+    80%{left:80em ;top: 0;transform: rotate(-5deg);}
+    90%{left:90em ;top: 0;transition: rotate(5deg);}
+    100%{left:100em ;top:0;transform: rotate(-5deg);}
+  
+  }
